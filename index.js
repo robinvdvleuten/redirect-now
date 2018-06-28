@@ -9,6 +9,6 @@ module.exports = function (hostname, opts = {}) {
       return next()
     }
 
-    res.redirect(`https://${hostname}/${req.originalUrl}`);
+    res.redirect(`https://${hostname}${req.originalUrl}`);
   }
 }
