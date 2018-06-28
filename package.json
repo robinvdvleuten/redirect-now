@@ -1,0 +1,8 @@
+{
+  "name": "redirect-now",
+	"description": "Middleware to redirect aliased now.sh domains.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Robin van der Vleuten <robin@webstronauts.co> (robinvdvleuten.nl)",
+  "main": "index.js"
+}
