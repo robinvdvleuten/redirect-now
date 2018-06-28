@@ -2,6 +2,7 @@ const { NODE_ENV, NOW_URL } = process.env
 
 module.exports = function (hostname, opts = {}) {
   const equalsHostname = hostname instanceof RegExp ? h => hostname.test(h) : h => h === hostname
+  const equalsNow = h => `https://${h}` === NOW_URL
 
   const target = opts.target || hostname
   const enabled = opts.enabled || NODE_ENV === 'production'
@@ -11,7 +12,7 @@ module.exports = function (hostname, opts = {}) {
   }
 
   return (req, res, next) => {
-    if (!enabled || equalsHostname(req.hostname) || req.hostname === NOW_URL) {
+    if (!enabled || equalsHostname(req.hostname) || equalsNow(req.hostname)) {
       return next()
     }
 
