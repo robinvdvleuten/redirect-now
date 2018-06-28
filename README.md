@@ -1,7 +1,6 @@
 # redirect-now
 
-Middleware especially for [𝚫 Now](https://zeit.co/now) deployments that redirects all requests to a configured
-hostname.
+Middleware especially for [𝚫 Now](https://zeit.co/now) deployments that redirects all requests to a configured hostname.
 
 It respects the Now deployment URLs though. So when you access a non-aliased deployment URL directly (e.g. `https://redirect-now-otytioldup.now.sh`), incoming requests will not be redirected.
 
