@@ -32,13 +32,19 @@ Returns a middleware function that is compatible with Connect's API.
 
 #### hostname
 
-Type: `string`
+Type: `string` `RegExp`
 
-The hostname to redirect to.
+The hostname to redirect to, or a `RegExp` to test the hostname against.
 
 #### options
 
 Type: `Object`
+
+##### target
+
+Type: `string`
+
+By default, the redirect target is the passed hostname.
 
 ##### enabled
 
