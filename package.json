@@ -1,7 +1,7 @@
 {
   "name": "redirect-now",
   "description": "Middleware to redirect aliased Now deployments",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co> (robinvdvleuten.nl)",
   "main": "index.js"
